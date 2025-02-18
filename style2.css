@@ -1,0 +1,33 @@
+/* *{
+    padding: 0;
+    margin: 0;
+} */
+body{
+    background-color: rgb(161, 207, 192);
+    /* background-image: repeating-linear-gradient(red 20%,yellow); */
+}
+.nav-bar ul{
+    height: 40px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    border: 0.5px solid wheat;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li{
+    color: azure;
+    align-items: center;
+    margin-right: 250px;
+}
+
+a{
+    color: wheat;
+}
+
+img{
+    align-items: center;
+    margin-left: 500px;
+}

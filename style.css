@@ -1,0 +1,25 @@
+
+.div1{
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
+    background-image: linear-gradient(rgb(243, 114, 9) 40%, white 30%, green 40%);
+}
+
+.div2{
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 20px;
+    background-image: linear-gradient( red, yellow, green);
+}
+
+.div3{
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 20px;
+    background-image: conic-gradient(red, yellow, green, blue, black);
+    border-radius: 50%;
+}
+
