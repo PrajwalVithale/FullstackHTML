@@ -7,8 +7,11 @@
 </head>
 <body>
     <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required><br><br>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Fname" autofocus><br>
+
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
 
         <label for="dob">Date of Birth:</label>
         <input type="date" id="dob" name="dob" required><br><br>
@@ -16,11 +19,20 @@
         <label for="age">Age:</label>
         <input type="range" id="age" name="age" max="100"><br><br>
 
+        <input type = "radio" name = "sex" value = "male"> Male<br> 
+        <input type = "radio" name = "sex" value = "female"> Female<br><br><br>
+
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required><br><br>
+        <input type="email" id="email" name="email" required placeholder="@gmail.com"><br><br>
+
+        <label for="textarea">About yourself:</label>
+        <textarea placeholder="Describe yourself here..."></textarea><br><br>
 
         <label for="website">Website:</label>
         <input type="URL" id="Website" name="Website"><br><br>
+
+        <button type="submit">Sign up</button>
+        <input type="reset" value="Reset">
     </form>
 </body>
 </html>
