@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Bites - Restaurant</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?food,restaurant') no-repeat center center/cover;
+            height: 80vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 { font-size: 3rem; }
+        .menu-item img { width: 100%; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Delicious Bites</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div>
+            <h1>Welcome to Delicious Bites</h1>
+            <p>The Best Food in Town</p>
+            <a href="#menu" class="btn btn-primary">View Menu</a>
+        </div>
+    </header>
+
+    <!-- Menu Section -->
+    <section class="container my-5" id="menu">
+        <h2 class="text-center mb-4">Our Menu</h2>
+        <div class="row">
+            <div class="col-md-4 text-center menu-item">
+                <img src="https://source.unsplash.com/300x200/?pizza" alt="Pizza">
+                <h4>Delicious Pizza</h4>
+                <p>Freshly baked with the best ingredients.</p>
+            </div>
+            <div class="col-md-4 text-center menu-item">
+                <img src="https://source.unsplash.com/300x200/?burger" alt="Burger">
+                <h4>Classic Burger</h4>
+                <p>Juicy and grilled to perfection.</p>
+            </div>
+            <div class="col-md-4 text-center menu-item">
+                <img src="https://source.unsplash.com/300x200/?pasta" alt="Pasta">
+                <h4>Italian Pasta</h4>
+                <p>Served with authentic sauces and cheese.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Section -->
+    <section class="bg-light py-5 text-center">
+        <h2>Special Offers</h2>
+        <p>Get 20% off on your first online order!</p>
+        <button class="btn btn-success">Order Now</button>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="container my-5" id="about">
+        <h2 class="text-center">About Us</h2>
+        <div class="card mx-auto" style="max-width: 600px;">
+            <div class="card-body">
+                <h5 class="card-title">Our Story</h5>
+                <p class="card-text">At Delicious Bites, we serve mouth-watering dishes made with love and passion.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Online Reservation Form -->
+    <section class="container my-5" id="contact">
+        <h2 class="text-center">Book a Table</h2>
+        <form class="w-50 mx-auto">
+            <div class="mb-3">
+                <label class="form-label">Your Name</label>
+                <input type="text" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Date & Time</label>
+                <input type="datetime-local" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Reserve Now</button>
+        </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

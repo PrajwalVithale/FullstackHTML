@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enhanced Fade and Slide Effects</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            text-align: center;
+            margin: 30px;
+            background-color: #f2f2f2;
+        }
+        h2 {
+            margin-bottom: 30px;
+        }
+        button {
+            margin: 10px 5px;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 40px;
+        }
+        .box {
+            width: 120px;
+            height: 120px;
+            display: none;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: all 0.5s ease-in-out;
+        }
+        #div1 { background-color: rgb(0, 225, 255); display: block; }
+        #div2 { background-color: rgb(128, 0, 83); }
+        #div3 { background-color: rgb(0, 0, 0); }
+    </style>
+    <script>
+        $(document).ready(function() {
+            $('#btn1').click(function() {
+                $('#div1').fadeIn(1000, function() {
+                    $('#div2').fadeIn(1500, function() {
+                        $('#div3').fadeIn(2000);
+                    });
+                });
+            });
+
+            $('#btn2').click(function() {
+                $('#div3').fadeOut(2000, function() {
+                    $('#div2').fadeOut(1500, function() {
+                        $('#div1').fadeOut(1000);
+                    });
+                });
+            });
+
+            $('#btn3').click(function() {
+                $('#div1').fadeToggle(1000);
+                $('#div2').fadeToggle(1500);
+                $('#div3').fadeToggle(2000);
+            });
+
+            $('#btnSlideDown').click(function() {
+                $('#div1').slideDown(1000, function() {
+                    $('#div2').slideDown(1500, function() {
+                        $('#div3').slideDown(2000);
+                    });
+                });
+            });
+
+            $('#btnSlideUp').click(function() {
+                $('#div3').slideUp(2000, function() {
+                    $('#div2').slideUp(1500, function() {
+                        $('#div1').slideUp(1000);
+                    });
+                });
+            });
+
+            $('#btnReset').click(function() {
+                $('#div1, #div2, #div3').hide();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h2>🎨 Enhanced Fade and Slide Effects</h2>
+    <div>
+        <button id="btn1">Fade In</button>
+        <button id="btn2">Fade Out</button>
+        <button id="btn3">Fade Toggle</button>
+        <button id="btnSlideDown">Slide Down</button>
+        <button id="btnSlideUp">Slide Up</button>
+        <button id="btnReset">Reset</button>
+    </div>
+
+    <div class="container">
+        <div id="div1" class="box"></div>
+        <div id="div2" class="box"></div>
+        <div id="div3" class="box"></div>
+    </div>
+</body>
+</html>

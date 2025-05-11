@@ -1,0 +1,188 @@
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    input[type="text"], input[type="password"] {
+      padding: 10px;
+      margin: 10px 0;
+      width: 80%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      border: 1px solid #888;
+      background-color: #eee;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login Page</h2>
+    <form>
+      <div>
+        <label>Username:</label>
+        <input type="text" name="username" value="Prajwal">
+      </div>
+      <div>
+        <label>Password:</label>
+        <input type="password" name="password">
+      </div>
+      <div>
+        <button type="submit">Login</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
+ -->
+<!-- 
+ <!DOCTYPE html>
+<html>
+<head>
+    <title>Full Name Display</title>
+    <style>
+        h1 {
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <h1>PRAJWAL VITHALE</h1>
+</body>
+</html> -->
+<!-- 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AG form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #00ccff;
+            padding: 30px;
+        }
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="text-center">AG form</h2>
+        <p class="text-center">Using Bootstrap to create a RSVP form</p>
+        <form>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" value="PRAJWAL">
+                </div>
+                <div class="col">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastName" value="G">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" value="prajwal@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="text" class="form-control" id="phone" value="13424353545">
+            </div>
+            <div class="row mb-3">
+                <div class="col">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country">
+                        <option selected>Choose...</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="state" class="form-label">State</label>
+                    <select class="form-select" id="state">
+                        <option selected>Karnataka</option>
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="zip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="zip" value="xxx">
+                </div>
+            </div>
+            <div class="mb-3">
+                <strong>Will you attend</strong><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="attend" id="yes">
+                    <label class="form-check-label" for="yes">Yes</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="attend" id="no" checked>
+                    <label class="form-check-label" for="no">No</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="guests" class="form-label">And with how many guests?</label>
+                <select class="form-select" id="guests">
+                    <option selected>Zero</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="comments" class="form-label">Additional Comments</label>
+                <textarea class="form-control" id="comments" rows="4"></textarea>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Prompt</title>
+</head>
+<body>
+
+<h1>JavaScript Prompt</h1>
+
+<button onclick="showPrompt()">Try it</button>
+
+<p id="greeting"></p>
+<p id="age"></p>
+
+<script>
+function showPrompt() {
+  let name = prompt("Please enter your name:", "PRAJWAL VITHALE");
+  if (name != null && name !== "") {
+    document.getElementById("greeting").innerHTML = "Hello " + name.toUpperCase() + "! How are you today?";
+    document.getElementById("age").innerHTML = "You are 20 years old.";
+  }
+}
+</script>
+
+</body>
+</html>
